@@ -1,0 +1,20 @@
+{
+  "project": "AIO ADRENALINE",
+  "channel": "Sprojectchannel",
+  "version": "0.1",
+  "min_supported_version": "0.1",
+  "released_at": "2026-11-19",
+  "notes": "BETA TEST",
+  "changelog": [
+    "ADD PRIMEVIDEO COOKIE CHECKER",
+    "ADD NETFLIX COOKIE CHECKER",
+    "ADD SPOTIFY COOKIE CHECKER",
+    "ADD CAPCUT EMAIL:PASS CHECKER",
+    "ADD CRUNCHYROLL EMAIL:PASS CHECKER"
+
+  ],
+  "repository": {
+    "url": "https://github.com/SEU_USUARIO/SEU_REPO",
+    "main_raw_url": "https://raw.githubusercontent.com/SEU_USUARIO/SEU_REPO/main/main.py"
+  }
+}
