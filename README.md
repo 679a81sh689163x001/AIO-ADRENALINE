@@ -31,49 +31,13 @@ No bloat. No web dashboards. Pure CLI execution.
 
 ---
 
-### `[0x01] DIRECTORY TREE`
 
-```text
-aio/
-├── main.py                  
-├── version.json             
-├── combo.txt               
-├── proxy.txt / proxies.txt  
-├── Assets/                  
-│   ├── banner1.txt
-│   ├── banner2.txt
-│   └── banner3.txt
-├── cookies/                 
-├── modules/                 
-│   ├── cg.adCR/            
-│   ├── ch.NT/             
-│   ├── dhs.D/             
-│   ├── ispa.RB/            
-│   ├── pJ.xCC/              
-│   ├── pjl.sssS/            
-│   ├── sdos.RG/             
-│   └── sop.PV/              
-└── results/                 
-    ├── CAPCUT/
-    ├── CLOUD MANAGER/
-    │   ├── cookies/
-    │   ├── DOMAIN/
-    │   ├── formats/
-    │   ├── LOGINPASS/
-    │   └── ULP/
-    ├── CRUNCHYROLL/
-    ├── DISNEY/
-    ├── NETFLIX/
-    ├── PRIMEVIDEO/
-    ├── ROBLOX/
-    └── SPOTIFY/
-```
 
 ---
 
 
 
-### `[0x02] SETUP & EXECUTION`
+### `[0x01] SETUP & EXECUTION`
 
 ```bash
 # 1. Clone repository
@@ -94,7 +58,7 @@ python main.py
 
 ---
 
-### `[0x03] DISCLAIMER & COMMS`
+### `[0x02] DISCLAIMER & COMMS`
 
 > This software is provided strictly for educational, research, and authorized security auditing purposes. The author assumes no responsibility for misuse.
 
