@@ -15,8 +15,6 @@
 **ALL-IN-ONE CHECKERS**
 
 ![Python](https://img.shields.io/badge/PYTHON-3.10%2B-0d1117?style=for-the-badge&logo=python&logoColor=00ff41)
-![Interface](https://img.shields.io/badge/UI-TERMINAL%20HUD-0d1117?style=for-the-badge&logo=gnometerminal&logoColor=00ff41)
-![Architecture](https://img.shields.io/badge/CORE-MODULAR-0d1117?style=for-the-badge&logoColor=00ff41)
 ![Channel](https://img.shields.io/badge/TG-@Sprojectchannel-0d1117?style=for-the-badge&logo=telegram&logoColor=00ff41)
 
 </div>
