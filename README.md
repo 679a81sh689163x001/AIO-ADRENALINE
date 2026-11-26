@@ -39,7 +39,7 @@ git clone https://github.com/679a81sh689163x001/AIO-ADRENALINE.git
 cd AIO-ADRENALINE
 
 # 2. Install dependencies
-pip install requests colorama pyyaml
+pip install -r requirements.txt
 
 # 3. Drop inputs into target folders/files
 #    - Cookies -> cookies/
