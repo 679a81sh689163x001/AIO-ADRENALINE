@@ -26,7 +26,13 @@
 **AIO-ADRENALINE** iIt is a script written in Python for checking streaming accounts and cookies.
 ---
 
-
+**MODULES**
+Netflix Cookies Checker
+Primevideo Cookies Checker
+Spotify cookies Checker
+Crunchyroll Checker
+Capcut Checker
+cloud manager
 
 ---
 
