@@ -1,17 +1,18 @@
 {
   "project": "AIO ADRENALINE",
   "channel": "Sprojectchannel",
-  "version": "0.1",
-  "min_supported_version": "0.1",
-  "released_at": "2026-11-19",
-  "notes": "BETA TEST",
+  "version": "0.2",
+  "min_supported_version": "0.2",
+  "released_at": "2026-11-23",
+  "notes": "v0.2",
   "changelog": [
     "ADD PRIMEVIDEO COOKIE CHECKER",
     "ADD NETFLIX COOKIE CHECKER",
     "ADD SPOTIFY COOKIE CHECKER",
     "ADD CAPCUT EMAIL:PASS CHECKER",
-    "ADD CRUNCHYROLL EMAIL:PASS CHECKER"
-
+    "ADD CRUNCHYROLL EMAIL:PASS CHECKER",
+    "ADD ROBLOX COOKIE CHECKER",
+	"ADD CLOUD MANAGER"
   ],
   "repository": {
     "url": "https://github.com/679a81sh689163x001/AIO-ADRENALINE",
