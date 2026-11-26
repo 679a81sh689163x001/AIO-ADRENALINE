@@ -23,16 +23,12 @@
 
 ### `[0x00] OVERVIEW`
 
-**AIO-ADRENALINE** is a modular command-line suite engineered for high-speed batch processing, credential/cookie validation, and raw log extraction. Built around a minimal terminal HUD with randomized ASCII headers, centralized output routing, and automatic version verification against `version.json`.
-
-No bloat. No web dashboards. Pure CLI execution.
-
+**AIO-ADRENALINE** iIt is a script written in Python for checking streaming accounts and cookies.
 ---
 
 
 
 ---
-
 
 
 ### `[0x01] SETUP & EXECUTION`
