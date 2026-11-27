@@ -32,7 +32,7 @@ Primevideo Cookies Checker\
 Spotify cookies Checker\
 Crunchyroll Checker\
 Capcut Checker\
-cloud manager\
+cloud manager
 
 ---
 
