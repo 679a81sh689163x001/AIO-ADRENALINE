@@ -27,12 +27,12 @@
 ---
 
 **MODULES**
-Netflix Cookies Checker
-Primevideo Cookies Checker
-Spotify cookies Checker
-Crunchyroll Checker
-Capcut Checker
-cloud manager
+Netflix Cookies Checker\
+Primevideo Cookies Checker\
+Spotify cookies Checker\
+Crunchyroll Checker\
+Capcut Checker\
+cloud manager\
 
 ---
 
